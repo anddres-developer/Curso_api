@@ -1,3 +1,4 @@
 node_modules/
 .env
 postges_data/
+docker-compose.yml

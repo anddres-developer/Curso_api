@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: mi_api_db
+    environment:
+      - POSTGRES_DB=Base_De_Datos
+      - POSTGRES_USER=Usuario
+      - POSTGRES_PASSWORD=Contraseña
+    ports:
+      - 5433:5432
+    volumes:
+      - ./postges_data:/var/lib/postgresql/data
+
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+    restart: always # Se reinicia si el PC se apaga
