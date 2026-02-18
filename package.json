@@ -1,0 +1,36 @@
+{
+  "name": "my-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --env-file .env --watch index.js",
+    "env": "node --env-file .env index",
+    "start": "node index.js",
+    "lint": "eslint",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Andres dev",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "mocha": "^11.7.5",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "cors": "^2.8.6",
+    "express": "^5.1.0",
+    "joi": "^18.0.2",
+    "pg": "^8.18.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7"
+  }
+}
